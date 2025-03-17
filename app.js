@@ -50,6 +50,24 @@ function mostrarAmigos() {
  }
    
 }
+//Función para sortear a los amigos
 
+function sortearAmigo() {
+    // Verificar si el arreglo de amigos está vacío
+    if (amigos.length === 0) {
+        alert("No hay amigos en la lista. Por favor, agrega al menos un amigo.");
+        return; // Detener la ejecución si no hay amigos
+    }
+
+    // Obtener un índice aleatorio
+    let indiceAleatorio = Math.floor(Math.random() * amigos.length);
+
+    // Obtener el nombre del amigo seleccionado
+    let amigoSeleccionado = amigos[indiceAleatorio];
+
+    // Mostrar el resultado en el elemento con ID "resultado"
+    let resultadoElemento = document.getElementById('resultado');
+    resultadoElemento.innerHTML = `<li>El amigo seleccionado es: <strong>${amigoSeleccionado}</strong></li>`;
+}
 
     
