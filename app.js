@@ -55,7 +55,7 @@ function mostrarAmigos() {
 function sortearAmigo() {
     // Verificar si el arreglo de amigos está vacío
     if (amigos.length === 0) {
-        alert("No hay amigos en la lista. Por favor, agrega al menos un amigo.");
+        alert("No hay amigos en la lista. Por favor, agrega tus amigos para el sorteo.");
         return; // Detener la ejecución si no hay amigos
     }
 
